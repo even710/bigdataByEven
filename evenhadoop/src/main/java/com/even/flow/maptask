@@ -1,0 +1,4 @@
+1，指定inputformat方式，以便处理小文件
+2，指定分区方式
+3，指定key.compareTo排序方式
+4，编写combine类来实现归并
