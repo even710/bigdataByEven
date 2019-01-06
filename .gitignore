@@ -3,3 +3,5 @@ out
 .mvn
 target
 even_util
+._SUCCESS
+.part
