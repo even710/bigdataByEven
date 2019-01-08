@@ -1,0 +1,4 @@
+1，首先新建封裝數據的類Context
+2，創建Mapper接口
+3，WorkCountMapper實現Mapper接口，對文件進行拆分
+4，提交任務WordCount

@@ -1,0 +1,23 @@
+
+用户编写mr程序主要分为三个部分：Mapper,Reducer,Driver
+
+1.Mapper阶段
+
+	（1）用户自定义mapper类 要继承父类Mapper
+	（2）Mapper的输入数据的kv对形式（kv类型可以自定义）
+	（3）Mapper的map方法的重写（加入业务逻辑）
+	（4）Mapper的数据输出kv对的形式（kv类型可以自定义）
+	（5）map()方法(maptask进程)对每个<k,v>调用一次
+
+2.Reducer阶段
+
+	（1）用户自定义reducer类 要继承父类Reducer
+	（2）Reducer的数据输入类型对应的是Mapper阶段的输出数据类型,也是kv对
+	（3）Reducer的reduce方法的重写（加入业务逻辑）
+	（4）ReduceTask进程对每组的k的<k,v>组调用一次reduce方法
+
+3.Driver阶段
+
+	mr程序需要一个Driver来进行任务的提交，提交的任务是一个描述了各种重要信息的job对象
+
+	注意：输入输出类型必须要正确
