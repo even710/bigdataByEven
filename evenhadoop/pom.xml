@@ -75,7 +75,6 @@
         </dependency>
         <!--导入MapReduce包 end-->
         <!--导入zookeeper包 start-->
-        <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
